@@ -8,9 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500;1,700&family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
+
     <title>Assignment</title>
 </head>
 <body>
@@ -31,7 +32,7 @@
         </div>
     </header>
     <div class="page1-home">
-        <div class="bg-lightblue">
+        <div class="bg-lightblue banner">
             <div class="container">
                 <div class="row">
                     <div class="col-2">
@@ -128,37 +129,48 @@
                             </div>
                         </div>
                         <div class="col-2">
-                
-                                <img class="absolute" src="images/about-image.png" alt="smiling girl">
+                            <div class="absolute">
+                                <img src="images/about-image.png" alt="smiling girl">
+                            </div>   
                            
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="container">
-            <div class="bg-lightblue">
-
-                <a href="##">Business Strategy</a>
-                <a href="##">Digitalization</a>
-                <a href="##">Risk Assessment</a>
-                <div class="row">
-                    <div class="col-2">
-                        <h2>Helping clients with research and strategy for their business</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque nemo, dolor, voluptate a natus dolorem, quam tenetur amet itaque dolores quo ex qui! Ad, non! Provident amet temporibus deleniti culpa commodi dolorum aut recusandae natus!<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio totam necessitatibus iure maiores soluta voluptas!</p>
-                        <a class="links" href="services">See all services</a>
+        <section>
+            <div class="container">
+                <div class="bg-lightblue ribbon">
+                    <div class="ribb">  
+                        <div class="hbutton">
+                            <a  class="buttons" href="##">Business Strategy</a>
+                            <a class="buttons" href="##">Digitalization</a>
+                            <a class="buttons" href="##">Risk Assessment</a>
+                        </div>                 
+                        <div class="row">
+                            <div class="col-2">
+                                <h2>Helping clients with research and strategy for their business</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque nemo, dolor, voluptate a natus dolorem, quam tenetur amet itaque dolores quo ex qui! Ad, non! Provident amet temporibus deleniti culpa commodi dolorum aut recusandae natus!<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio totam necessitatibus iure maiores soluta voluptas!</p>
+                                <a class="links" href="services">See all services</a>
+                            </div>
+                            <div class="col-2" >
+                                <div class="absolute">
+                                    <img class="orange" src="images/team.png" alt="team">
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <img class="orange" src="images/team.png" alt="team">
+                    <div class="ribbon-mark">
+                        <img src="/images/Ribbon.png" alt="">
                     </div>
-                    
                 </div>
             </div>
-        </div>
+        </section>
         <div class="full">
-            <div class="row">
-                <div class="col-2">
-                    <img class="coffeebreak" src="images/experience-image.png" alt="coffeebreak">
+            <div class="row exp">
+                <div class="col-2 coffeebreak">
+                    
                 </div>
                 <div class="col-2">
                     <h2>Energy of a start-up combined with 30 years of experience.</h2>
@@ -169,21 +181,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <h2>Finsweet Was A Dream To Work With</h2>
-                    <p>Maecenas Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi deleniti quibusdam, eius repellat commodi magnam quo, exercitationem illum rem iure aliquam vero dolorem temporibus laboriosam corrupti qui sint eaque facilis.</p>
-                    <div class="row">
-                        <div class="col-2">
-                            <img class="photo" src="images/photo.jpeg" alt="myselfie">
-                        </div>
-                        <div class="col-2">
-                            <h5>Temulen Ariunbold</h5>
-                            <h6>CEO at IntouchPoint</h6>
+                    <div class="dream">
+                        <h2>Finsweet Was A Dream To Work With</h2>
+                        <p>Maecenas Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi deleniti quibusdam, eius repellat commodi magnam quo, exercitationem illum rem iure aliquam vero dolorem temporibus laboriosam corrupti qui sint eaque facilis.</p>
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="photo" src="images/photo.jpeg" alt="myselfie">
+                            </div>
+                            <div class="col-2">
+                                <p class="myname">Temulen Ariunbold</p>
+                                <h6 class="myname">CEO at IntouchPoint</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
-                    <a href="video" src="#"><i class="fa-solid fa-play"></i>Play Video</a>
+                <div class="col-2 intro">
                     <img class="video" src="images/video-image.png" alt="video">
+                    <div class="play-but">
+                        <a href="video" src="#"><i class="fa-solid fa-play"></i></a>
+                        <span>Play Video</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -219,6 +236,58 @@
                 </div>
               </div>
           </section>
+          <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="logo"><b>{finsweet</b></div>
+                            <h3>Bespoke software solutions</h3>
+
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+                    </div>
+                    <div class="col-4">
+                        <ul class="nav">
+                            <li><a href="#"><b>Company</b></a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-4">
+                        <ul class="nav">
+                            <li><a href="#"><b>Connect</b></a></li>
+                            <li><a href="#">hi@finsweet.com</a></li>
+                            <li><a href="#">+(123)456-7890</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-4">
+                        <ul class="nav">
+                            <li><a href="#"><b>Join Newsletter</b></a></li>
+                            <li><a class="links" href="#">Type email here</a></li>
+                            <li><a class="link" href="#">Subscribe</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="nav-bar">
+                    <div class="rights"><i class="fa-regular fa-copyright">All rights reserved-Finsweet</i></div>
+                        
+
+
+                    <ul class="main-nav">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+          </footer>
 
 
     </div>

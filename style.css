@@ -4,7 +4,7 @@ body{
 }
 
 .container{
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto; 
 }
 
@@ -95,6 +95,10 @@ img{
     margin: calc(100%/2 -40px);
     flex: 1;
 }
+.col-4{
+    display: inline;
+    flex: 1;
+}
 h2{
     font-size: 3rem;
     color:#063255;
@@ -179,6 +183,9 @@ h6{
 .absolute{
     position: absolute;
 }
+.absolute img{
+    vertical-align: bottom;
+}
 .absolute::after{
     content: '';
     position: absolute;
@@ -186,5 +193,94 @@ h6{
     background-color:#F58A07;
     mix-blend-mode: multiply;
     border-radius: 30px 0 0 30px;
+}
+
+.photo{
+    width: 20%;
+}
+.full{
+    background-color: #F58A07;
+}
+.coffeebreak{
+    background-image: url("images/experience-image.png");
+    background-size: cover;
+}
+.exp{
+    height: 50vh;
+}
+.bg-lightblue .ribb {
     
+    margin: 100px;
+}
+.ribbon{
+    border-radius: 30px;
+    margin: 200px 0;
+}
+.hbutton{
+    margin: 50px 0 0 0;
+}
+.buttons {
+    font-size: 0.8rem;
+    color: #5B5B5B; 
+    margin: 20px;
+    border: 1px solid #5B5B5B;
+    border-radius: 20px;
+    padding: 10px 30px;
+    display: inline-block;
+}
+.buttons:hover{
+    color:#F58A07;
+    background-color:whitesmoke;
+    border: none;
+}
+.ribb .col-2{
+    padding: 50px 20px;
+}
+.ribbon h2{
+    font-size: 2.5rem;
+    font-weight: 550;
+
+}
+
+.ribbon{
+    position: relative;
+}
+
+.ribbon .ribbon-mark{
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    z-index: 1;
+}
+.bg-lightblue .banner .man{
+    vertical-align: bottom;
+}
+.full .col-2{
+    padding: 100px;
+}
+.full a{
+    font-size: 0.8rem;
+    color: #F58A07; 
+    margin: 20px;
+    border: 1px solid #F58A07;
+    background-color:whitesmoke;
+    border-radius: 20px;
+    padding: 10px 30px;
+    display: inline-block;
+}
+.full a:hover{
+    color:whitesmoke;
+    background-color:#F58A07;
+    border: none;
+}
+
+/*.dream h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 550;
+}
+.intro{
+    margin: 70px 0;
 }
