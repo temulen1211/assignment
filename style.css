@@ -15,6 +15,10 @@ img{
 a{
     text-decoration: none;
 }
+
+section{
+    padding: 6rem 0;
+}
 .bg-lightblue{
     background-color: #DCEAF5;
 }
@@ -33,18 +37,21 @@ a{
     color: #1D3444;
 }
 
+.main-nav li  .yellow{
+    background-color: bisque;
+    color:#F58A07;
+    border-radius: 20px;
+    padding:  5px 15px
+}
 .main-nav li a{
     padding: 0 1rem;
     color: #1D3444;
-
+    font-size: 0.8em;
+    
 }
 .nav-bar .logo{
     font-size: 18px;
     
-}
-
-.definition{
-    margin: 80px 0;
 }
 
 .headline{
@@ -57,7 +64,10 @@ a{
 h1{
     font-weight: 500;
 }
-
+.man{
+    vertical-align: bottom;
+    border-radius: 0;
+}
 
 p{
     color:#5B5B5B;
@@ -67,6 +77,7 @@ p{
 img{
     border-radius: 30px;
 }
+
 .button {
     font-size: 0.8rem;
     color: #1D3444; 
@@ -83,21 +94,27 @@ img{
 }
 .row{
     display: flex;
+    flex-wrap: wrap;
+}
+.gap {
+    gap: 40px;
 }
 .col-3{
-    display: inline;
-    margin:calc(100%/3 -40px);
+    width: calc(100%/3 - 40px);
     flex: 1;
-    margin-bottom: 100px;
+    flex-basis: 400px;
+    
 }
 .col-2{
-    display: inline;
-    margin: calc(100%/2 -40px);
-    flex: 1;
+    width: calc(100%/2 - 40px);
+    flex: 1 250px;
+}
+.inbox {
+    padding: 30px;
 }
 .col-4{
     display: inline;
-    flex: 1;
+    flex: 1 200px;
 }
 h2{
     font-size: 3rem;
@@ -119,10 +136,6 @@ h5{
     font-size: 1.5rem;
     font-weight: 400;
 }
-.col-3 p{
-    text-align: justify;
-    margin: 0 30px 0 0;
-}
 
 .links{
     color: #F58A07;
@@ -133,19 +146,15 @@ h5{
     content: '\2192';
     color: #F58A07;
 }
-/*.sec-blue .row .col-2 p{
-    margin: 00px;
-    color: #063255;
-}*/
+
 
 .sec-blue .col-3{
    background-color: white;
    border-radius: 20px;
-   margin: calc(100%/3 -40px);
-   margin: 30px 0 50px 30px; 
-   padding: 30px;
+   padding: 20px;
+   
+   
 }
-
 .energy{
     margin: 120px 0;
 }
@@ -154,7 +163,6 @@ h5{
     font-weight: 550;
 
 }
-
 
 h6{
     color: #F58A07;
@@ -194,10 +202,6 @@ h6{
     mix-blend-mode: multiply;
     border-radius: 30px 0 0 30px;
 }
-
-.photo{
-    width: 20%;
-}
 .full{
     background-color: #F58A07;
 }
@@ -205,16 +209,15 @@ h6{
     background-image: url("images/experience-image.png");
     background-size: cover;
 }
-.exp{
+/* .exp{
     height: 50vh;
-}
+} */
 .bg-lightblue .ribb {
     
     margin: 100px;
 }
 .ribbon{
     border-radius: 30px;
-    margin: 200px 0;
 }
 .hbutton{
     margin: 50px 0 0 0;
@@ -274,13 +277,225 @@ h6{
     border: none;
 }
 
-/*.dream h2{
+.dream h2{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2.5rem;
     font-weight: 550;
 }
-.intro{
+.video{
     margin: 70px 0;
+   
+}
+.intro{
+    position: relative;
+}
+.play-but{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+
+}
+.play-but a{
+    background-color: #F58A07;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+.third-blue img{
+    border-radius: 30px 30px 0 0;
+}
+
+
+
+/* ... */
+
+.Finsweet-was p{
+    width: 280px;
+}
+
+
+.myphoto{
+    display: flex;
+}
+
+
+.myphoto img{
+    width: 60px;
+    height: 60px;
+}
+.ceo-img{
+    width: 3.75rem;
+}
+.ceo-name p{
+ padding: 0;
+}
+.dream{
+    margin-top: 150px;
+    margin-left: 120px;
+}
+.myname{
+    font-size: 1em;
+    color:#063255;
+    margin: 0;
+}
+.myname-1{
+    color: #F58A07;
+
+
+}
+.third-blue .h3{
+    font-weight: 700;
+    margin-block-start: 2em;
+}
+.last{
+    background-color: white;
+    border-radius: 30px;
+    
+}
+.last h4{
+    font-weight: 500;
+
+}
+.col-3 .last img{
+   border-radius: 0;
+}
+.article{
+    padding: 30px;
+}
+
+footer{
+    background-color: #063255;
+    color: white;
+    padding: 100px;
+}
+
+.col-4 h3{
+    padding: 0;
+    margin: 20px 0;
+    font-size: 2em;
+    font-weight: 500;
+}
+.col-4 .logo {
+    font-size: 1.2em;
+}
+i {
+    color: white;
+    margin: 20px 0 100px;
+}
+.col-4 .listt ul{
+   color: white;
+   font-size: 0.8em;
+   line-height: 2.2;
+}
+footer .listt{
+    list-style: none;
+    padding: 0;
+}
+footer .listt li{
+    padding: .5rem 0;
+}
+footer .listt a{
+    color: white;
+}
+
+input{
+    background-color: white;
+    color: #5B5B5B;
+    text-align: left;
+    border-radius: 30px;
+    padding:  17px 40px;
+    margin: 5px;
+
+}
+button{
+    background-color:#F58A07;
+    color: white;
+    text-align: right;
+    border-radius: 30px;
+    padding:  17px 40px;
+    margin: 5px;
+
+}
+.col-4 a i{
+    padding: 10px;
+}
+footer .nav-bar .rights{
+    font-size: 1rem;
+}
+footer .main-na li a {
+    color: white;
+}
+footer .main-na{
+    display: flex;
+} 
+.main-na a{
+    color: white;
+    padding-left: 30px;
+}
+.col-4 .nav b{
+    margin-bottom: 40px;
+}
+
+
+
+/*page2 careers*/
+.buttonpage2 {
+    font-size: 0.8rem;
+    color: #1D3444; 
+    margin: 20px;
+    background-color: #F58A07;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin: 30px 0;
+}
+.buttonpage.buttonpage2{
+    color:white;
+    background-color: #F58A07;
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+.pages1{
+    margin-top: 50px;
+}
+.column{
+    padding: 100px 70px;
+}
+.column h2{
+    font-weight: 900;
+}
+.pages2{
+    margin-top: 70px;
+}
+.pages2 h3{
+    font-weight: 500;
+}
+.pageimg {
+    position: absolute;
+}
+.pageimg img{
+    vertical-align: bottom;
+}
+.pageimg::after{
+    content: '';
+    position: absolute;
+    inset:50% 90% 35% -8%;
+    background-color:#F58A07;
+    mix-blend-mode: multiply;
+    border-radius: 20px;
+}
+.inbox h6{
+    margin: 0;
+    color: #063255;
+}
+.inbox p{
+    padding: 0;
+}
+.rad {
+    border-radius: 30px;
+}
+.full {
+    width: 100%;
 }
